@@ -9,8 +9,8 @@ public class testProperties {
 
 	public static void main(String[] args) throws IOException {
 		
-//		System.out.println(System.getProperty("user.dir"));
-//		
+		System.out.println(System.getProperty("user.dir"));
+		
 //		Properties OR = new Properties();
 //		Properties config = new Properties();
 //		
