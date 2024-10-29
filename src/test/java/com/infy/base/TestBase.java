@@ -40,6 +40,7 @@ public class TestBase {
 	@AfterSuite
 	public void tearDown()
 	{
+		//closing browser
 		driver.close();
 		
 	}
