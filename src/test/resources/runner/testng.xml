@@ -3,7 +3,7 @@
 <suite name="Data driven basics">
   <test thread-count="5" name="LoginTest">
     <classes>
-      <class name="com.infy.testCases.LoginTest"/>
+      <class name="com.infy.testcases.LoginTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
