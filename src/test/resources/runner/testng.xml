@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Data driven basics">
-  <test thread-count="5" name="LoginTest">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	</listeners>
+  <test thread-count="5" name="BankLoginTest">
     <classes>
-      <class name="com.infy.testcases.LoginTest"/>
+      <class name="com.infy.testcases.BankManagerLoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+   <test thread-count="5" name="AddingCustomerLoginTest">
+    <classes>
+      <class name="com.infy.testcases.AddCustomer"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+
+ 
