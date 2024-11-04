@@ -71,7 +71,9 @@ public class TestBase {
 				System.setProperty("webdriver.chrome.driver" , "C:\\ChoromeDriver\\chromedriver.exe");
 				driver = new FirefoxDriver();
 			}
-		
+		System.setProperty("https.proxyHost", "myProxy");
+		System.setProperty("https.proxyPort", "80");
+		//urlConnection.setConnectTimeout(1000);
 		driver.get(config.getProperty("testsiteURL"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Integer.parseInt(config.getProperty("ImpliciteWait"))));
