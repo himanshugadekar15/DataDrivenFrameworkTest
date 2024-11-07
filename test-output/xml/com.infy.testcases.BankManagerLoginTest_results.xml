@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="1.119">
+           time="1.123">
   <properties />
   
   
-            <testcase name="loginAsBankManager" time="1.119" classname="com.infy.testcases.BankManagerLoginTest" />
+            <testcase name="loginAsBankManager" time="1.123" classname="com.infy.testcases.BankManagerLoginTest" />
       
 </testsuite>

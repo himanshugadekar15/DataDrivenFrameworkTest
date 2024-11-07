@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Data driven basics]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.infy.listeners.CustomListeners"/>
+  </listeners>
+  <test thread-count="5" name="BankLoginTest(failed)">
+    <classes>
+      <class name="com.infy.testcases.BankManagerLoginTest">
+        <methods>
+          <include name="loginAsBankManager"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.infy.testcases.BankManagerLoginTest -->
+    </classes>
+  </test> <!-- BankLoginTest(failed) -->
   <test thread-count="5" name="AddingCustomerLoginTest(failed)">
     <classes>
       <class name="com.infy.testcases.AddCustomer">
