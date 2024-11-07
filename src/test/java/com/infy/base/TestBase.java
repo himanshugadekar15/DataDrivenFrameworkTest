@@ -107,6 +107,7 @@ public class TestBase {
 		{
 			if(driver!=null)
 			{
+				System.out.print("I am closing the browser");
 			//closing browser
 			driver.quit();
 			}
